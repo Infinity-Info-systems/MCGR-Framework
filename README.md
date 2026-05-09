@@ -1,4 +1,4 @@
-# MCGR Submission Package
+MCGR Submission Package
 
 This package contains a LaTeX-based IEEE-style manuscript and supporting submission materials.
 
