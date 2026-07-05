@@ -16,6 +16,7 @@ This index organizes the MCGR repository into a navigable content system and def
 - [README Style Guide](./readme-style-guide.md)
 - [First-Wave Assets](./first-wave-assets.md)
 - [Starter Kit Status](./starter-kit-status.md)
+- [Repo Content Recommendations Completion](./repo-content-recommendations-completion.md)
 - [Framework Overview](./framework-overview.md)
 - [Problem Statement](./problem-statement.md)
 - [Framework Architecture](./framework-architecture.md)
