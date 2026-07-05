@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandBar from "../../../components/BrandBar";
 
 const sections = [
   {
@@ -50,22 +51,11 @@ const sections = [
 export default function EcosystemPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <section className="border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <p className="text-blue-300 font-bold mb-4">MCGR Ecosystem</p>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight max-w-5xl mb-6">
-            The Participating Repositories That Make Up The MCGR Framework.
-          </h1>
-          <p className="text-slate-300 text-base sm:text-lg leading-7 sm:leading-8 max-w-4xl">
-            This page is the ready-reference map for the MCGR repository family. Use it to jump directly to the right framework, operating model, or supporting knowledge repo.
-          </p>
-          <div className="mt-8">
-            <Link href="/mcgr-framework" className="inline-flex rounded-xl border border-slate-600 px-5 py-3 font-bold hover:border-blue-400">
-              Back To MCGR Home
-            </Link>
-          </div>
-        </div>
-      </section>
+      <BrandBar
+        eyebrow="MCGR Ecosystem"
+        title="The Participating Repositories That Make Up The MCGR Framework."
+        description="This page is the ready-reference map for the MCGR repository family. Use it to jump directly to the right framework, operating model, or supporting knowledge repo."
+      />
 
       <section className="border-b border-slate-800 bg-slate-950/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap gap-2 sm:gap-3 text-sm font-bold">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BrandBar from "../../../components/BrandBar";
 
 const publications = [
   {
@@ -26,16 +27,13 @@ const publications = [
 export default function PublicationsPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <section className="border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <p className="text-blue-300 font-bold mb-4">MCGR Publications</p>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight max-w-5xl mb-6">
-            The Research And Publication Trail Behind MCGR.
-          </h1>
-          <p className="text-slate-300 text-base sm:text-lg leading-7 sm:leading-8 max-w-4xl">
-            This page provides a ready reference to the public papers, SSRN links, and supporting research materials that anchor the framework.
-          </p>
-          <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-5 text-slate-300">
+      <BrandBar
+        eyebrow="MCGR Publications"
+        title="The Research And Publication Trail Behind MCGR."
+        description="This page provides a ready reference to the public papers, SSRN links, and supporting research materials that anchor the framework."
+      />
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-0">
+        <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 text-slate-300">
             <p className="leading-7">
               More insights are available in the GitHub Wiki, where the framework narrative and supporting evidence are organized in a deeper technical reference.
             </p>
@@ -47,12 +45,11 @@ export default function PublicationsPage() {
             >
               Open Wiki
             </a>
-          </div>
-          <div className="mt-8">
-            <Link href="/mcgr-framework" className="inline-flex rounded-xl border border-slate-600 px-5 py-3 font-bold hover:border-blue-400">
-              Back To MCGR Home
-            </Link>
-          </div>
+        </div>
+        <div className="mt-8">
+          <Link href="/mcgr-framework" className="inline-flex rounded-xl border border-slate-600 px-5 py-3 font-bold hover:border-blue-400">
+            Back To MCGR Home
+          </Link>
         </div>
       </section>
 
