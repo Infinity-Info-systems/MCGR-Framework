@@ -149,6 +149,7 @@ use-cases/               Enterprise and FinTech use cases
 ## Start Here
 
 - [Content Index](docs/content-index.md)
+- [Shared Starter Kit](docs/shared-starter-kit.md)
 - [Content Playbook](docs/content-playbook.md)
 - [Framework Overview](docs/framework-overview.md)
 - [Framework Architecture](docs/framework-architecture.md)
