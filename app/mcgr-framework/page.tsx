@@ -50,12 +50,6 @@ export default function MCGRFrameworkPage() {
       <section className="relative overflow-hidden border-b border-slate-800">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#1d4ed8,transparent_35%),radial-gradient(circle_at_bottom_right,#0f766e,transparent_30%)] opacity-30" />
         <div className="relative max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-slate-950/70 px-4 py-2">
-            <div className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-lg border border-blue-400/40 bg-slate-950">
-              <img src="/mcgr-logo.svg" alt="MCGR Framework logo" className="h-full w-full object-contain p-1" />
-            </div>
-            <p className="text-sm font-semibold tracking-[0.18em] text-blue-300 uppercase">MCGR Framework</p>
-          </div>
           <p className="text-blue-300 font-bold mb-4">Infinity Info Systems / Flagship Enterprise Offering</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] max-w-5xl mb-6">
             MCGR Framework Gives Enterprises One Consistent Operating Model For Multi-Cloud Governance, Reliability, Resilience, FinOps, Observability, And Compliance.
