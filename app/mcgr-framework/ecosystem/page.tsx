@@ -1,0 +1,125 @@
+import Link from "next/link";
+
+const sections = [
+  {
+    title: "Technical Reference Layers",
+    items: [
+      ["Governance And Policy", "https://github.com/rammar876/multi-cloud-governance-model"],
+      ["Observability And SRE", "https://github.com/rammar876/ai-driven-observability-framework"],
+      ["Cost Optimization", "https://github.com/rammar876/cloud-finops-governance"],
+      ["Disaster Recovery And Resilience", "https://github.com/rammar876/dr-governance-framework"],
+      ["Multi-Cloud Infrastructure", "https://github.com/rammar876/enterprise-architecture-blueprints"],
+    ],
+  },
+  {
+    title: "Core Frameworks",
+    items: [
+      ["Multi-Cloud Governance Model", "https://github.com/rammar876/multi-cloud-governance-model"],
+      ["SLO-Driven Cloud Architecture", "https://github.com/rammar876/slo-driven-cloud-architecture"],
+      ["Cloud FinOps Governance", "https://github.com/rammar876/cloud-finops-governance"],
+      ["DR Governance Framework", "https://github.com/rammar876/dr-governance-framework"],
+      ["AI-Driven Observability Framework", "https://github.com/rammar876/ai-driven-observability-framework"],
+      ["Cloud Risk And Compliance Controls", "https://github.com/rammar876/cloud-risk-compliance-controls"],
+      ["AI Governance Framework", "https://github.com/rammar876/ai-governance-framework"],
+    ],
+  },
+  {
+    title: "Applied Operating Repos",
+    items: [
+      ["Cloud Governance Assessment Toolkit", "https://github.com/rammar876/cloud-governance-assessment-toolkit"],
+      ["Enterprise Resilience Maturity Model", "https://github.com/rammar876/enterprise-resilience-maturity-model"],
+      ["Technical Due Diligence Cloud", "https://github.com/rammar876/technical-due-diligence-cloud"],
+      ["Platform Engineering Operating Model", "https://github.com/rammar876/platform-engineering-operating-model"],
+      ["Executive Technology Roadmaps", "https://github.com/rammar876/executive-technology-roadmaps"],
+    ],
+  },
+  {
+    title: "Supporting Knowledge Repos",
+    items: [
+      ["Architecture Diagrams", "https://github.com/rammar876/architecture-diagrams"],
+      ["Cloud Transformation Case Studies", "https://github.com/rammar876/cloud-transformation-case-studies"],
+      ["Enterprise Architecture Blueprints", "https://github.com/rammar876/enterprise-architecture-blueprints"],
+      ["Papers And Publications", "https://github.com/rammar876/papers-and-publications"],
+      ["Predictive Reliability Models", "https://github.com/rammar876/predictive-reliability-models"],
+      ["Self-Healing Cloud Operations", "https://github.com/rammar876/self-healing-cloud-operations"],
+      ["SRE Reliability Models", "https://github.com/rammar876/sre-reliability-models"],
+    ],
+  },
+];
+
+export default function EcosystemPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+          <p className="text-blue-300 font-bold mb-4">MCGR Ecosystem</p>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight max-w-5xl mb-6">
+            The Participating Repositories That Make Up The MCGR Framework.
+          </h1>
+          <p className="text-slate-300 text-base sm:text-lg leading-7 sm:leading-8 max-w-4xl">
+            This page is the ready-reference map for the MCGR repository family. Use it to jump directly to the right framework, operating model, or supporting knowledge repo.
+          </p>
+          <div className="mt-8">
+            <Link href="/mcgr-framework" className="inline-flex rounded-xl border border-slate-600 px-5 py-3 font-bold hover:border-blue-400">
+              Back To MCGR Home
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-800 bg-slate-950/95">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap gap-2 sm:gap-3 text-sm font-bold">
+          <Link href="/mcgr-framework" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Home</Link>
+          <Link href="/mcgr-framework/ecosystem" className="rounded-full border border-blue-400 px-4 py-2 text-blue-300">Ecosystem</Link>
+          <Link href="/mcgr-framework/publications" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Publications</Link>
+          <Link href="/mcgr-framework/assets" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Assets</Link>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-10 sm:space-y-12">
+        <div className="rounded-3xl border border-blue-400/30 bg-gradient-to-br from-blue-950 to-slate-900 p-6 sm:p-8 md:p-10">
+          <p className="text-blue-300 font-bold mb-4">Featured Repository</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-5">MCGR-Framework</h2>
+          <p className="text-slate-300 text-base sm:text-lg leading-7 sm:leading-8 max-w-4xl mb-8">
+            The flagship repository that anchors the entire MCGR ecosystem and ties together the supporting frameworks, publications, and artifacts.
+          </p>
+          <a
+            href="https://github.com/rammar876/MCGR-Framework"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex rounded-xl bg-blue-500 hover:bg-blue-600 px-6 py-3 font-bold"
+          >
+            Open MCGR-Framework Repo
+          </a>
+        </div>
+
+        <div className="rounded-3xl border border-slate-800 bg-slate-900 p-6 sm:p-8">
+          <p className="text-blue-300 font-bold mb-4">Continuous Feedback Loop</p>
+          <p className="text-slate-300 leading-7 max-w-4xl">
+            The technical documentation frames MCGR as an operating system where observability identifies inefficiencies, cost optimization recalibrates resources, governance updates policies, DR validates resilience, and continuous improvement is enforced across the stack.
+          </p>
+        </div>
+
+        {sections.map((section) => (
+          <div key={section.title}>
+            <h2 className="text-2xl sm:text-3xl font-black mb-5 sm:mb-6">{section.title}</h2>
+            <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 xl:grid-cols-3">
+              {section.items.map(([label, href]) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-slate-800 bg-slate-900 p-4 sm:p-5 hover:border-blue-400 transition"
+                >
+                  <div className="font-bold text-base sm:text-lg leading-snug">{label}</div>
+                  <div className="text-slate-400 text-sm mt-2">Open Repository</div>
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
+}
