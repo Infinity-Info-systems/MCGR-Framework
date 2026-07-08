@@ -63,7 +63,7 @@ This index organizes the MCGR repository into a navigable content system and def
 
 ## Public Site
 
-- [MCGR Framework on Infinity Info Systems](https://infinityinfosystems.com/mcgr-framework)
+- [MCGR Framework on MCGR Subdomain](https://mcgr.infinityinfosystems.com/mcgr-framework)
 
 ## Hub Guidance
 
