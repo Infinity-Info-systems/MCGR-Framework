@@ -41,3 +41,22 @@ Use this page to help visitors understand:
 - how the ecosystem is organized
 - which supporting assets are available
 
+## Ecosystem Table
+
+| Repo Group | Best For | Notes |
+| --- | --- | --- |
+| Core Frameworks | Governance and operating models | Anchor the flagship story |
+| Applied Operating Repos | Assessment and execution | Turn the framework into practice |
+| Supporting Knowledge Repos | Diagrams, cases, and publications | Provide proof and reusable visuals |
+
+## Figure
+
+```mermaid
+flowchart LR
+  A[MCGR Ecosystem] --> B[Core Frameworks]
+  A --> C[Applied Operating Repos]
+  A --> D[Supporting Knowledge Repos]
+  B --> E[Public Site]
+  C --> E
+  D --> E
+```

@@ -80,6 +80,17 @@ Connect maturity, transformation roadmaps, and business-technology alignment to 
 - Self-Healing Cloud Operations
 - SRE Reliability Models
 
+## Ecosystem At A Glance
+
+| Theme | What It Helps With | Example Repo |
+| --- | --- | --- |
+| Governance | Consistent cloud control | Multi-Cloud Governance Model |
+| Reliability | SLOs and operational response | SLO-Driven Cloud Architecture |
+| Resilience | Recovery and continuity | DR Governance Framework |
+| FinOps | Cost control and accountability | Cloud FinOps Governance |
+| Observability | Signals and prediction | AI-Driven Observability Framework |
+| Decision Support | Roadmaps and case studies | Executive Technology Roadmaps |
+
 ## Publications and Evidence
 
 MCGR is supported by a public research and publication trail that includes:
@@ -107,3 +118,14 @@ If you are new to MCGR:
 - [MCGR Content Index](./content-index.md)
 - [Publication and Webpage Plan](./publication-and-webpage-plan.md)
 
+## Figure
+
+```mermaid
+flowchart TB
+  A[Homepage] --> B[Featured Ecosystem]
+  A --> C[Publications]
+  A --> D[Webpage Plan]
+  B --> E[Core Frameworks]
+  B --> F[Applied Repos]
+  B --> G[Supporting Knowledge]
+```

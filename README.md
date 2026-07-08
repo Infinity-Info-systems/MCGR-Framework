@@ -6,6 +6,7 @@
 The MCGR Framework is a research-driven enterprise architecture framework for governing, operating, and optimizing multi-cloud platforms across AWS, Azure, GCP, and hybrid cloud environments.
 
 It integrates cloud governance, Site Reliability Engineering, FinOps, disaster recovery, observability, compliance alignment, and executive technology governance into a unified operating model.
+It should also make the ecosystem easy to explain from the public homepage and from the supporting repo pages.
 
 ## Purpose
 
@@ -73,6 +74,17 @@ Related research themes include:
 - [AI-Driven Observability Framework](../ai-driven-observability-framework/README.md)
 - [Cloud Risk and Compliance Controls](../cloud-risk-compliance-controls/README.md)
 - [AI Governance Framework](../ai-governance-framework/README.md)
+
+## Quick View
+
+| Layer | Core Focus | Supporting Repos |
+| --- | --- | --- |
+| Governance | Standards, policy, control ownership | Multi-Cloud Governance Model, Cloud Risk and Compliance Controls |
+| Reliability | SLOs, error budgets, incident response | SLO-Driven Cloud Architecture, SRE Reliability Models |
+| Resilience | DR readiness and failover | DR Governance Framework, Enterprise Resilience Maturity Model |
+| FinOps | Cost visibility and optimization | Cloud FinOps Governance, Cloud Governance Assessment Toolkit |
+| Observability | Telemetry and prediction | AI-Driven Observability Framework, Predictive Reliability Models |
+| Executive | Roadmaps and decision support | Executive Technology Roadmaps, Cloud Transformation Case Studies |
 
 ### Applied Operating Repos
 
@@ -160,3 +172,21 @@ use-cases/               Enterprise and FinTech use cases
 2. Use the playbook to keep section structure consistent.
 3. Expand the core framework pages first.
 4. Reuse the same pattern in the related repositories.
+
+## Ecosystem Flow
+
+```mermaid
+flowchart LR
+  A[MCGR Home] --> B[Governance]
+  A --> C[Reliability]
+  A --> D[Resilience]
+  A --> E[FinOps]
+  A --> F[Observability]
+  A --> G[Executive Governance]
+  B --> H[Related Repos]
+  C --> H
+  D --> H
+  E --> H
+  F --> H
+  G --> H
+```
