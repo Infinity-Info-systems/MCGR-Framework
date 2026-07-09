@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { label: "Home", href: "/mcgr-framework" },
   { label: "Ecosystem", href: "/mcgr-framework/ecosystem" },
   { label: "Publications", href: "/mcgr-framework/publications" },
   { label: "Assets", href: "/mcgr-framework/assets" },
+  { label: "Contact", href: "/mcgr-framework/contact" },
 ];
 
 export default function Navbar() {
@@ -13,15 +15,18 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
         <Link href="/mcgr-framework" className="group flex items-center gap-3 self-start">
           <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-blue-400/40 bg-slate-950 shadow-lg shadow-blue-950/30">
-            <img
+            <Image
               src="/mcgr-logo.svg"
               alt="MCGR Framework logo"
+              width={56}
+              height={56}
               className="h-full w-full object-contain p-1"
+              priority
             />
           </div>
           <div className="min-w-0 leading-tight">
-            <p className="text-[10px] font-semibold tracking-[0.28em] text-blue-300 uppercase sm:text-sm">
-              MCGR Framework
+            <p className="text-[10px] font-semibold tracking-[0.32em] text-blue-300 uppercase sm:text-sm">
+              Mcgr Framework
             </p>
             <p className="text-sm font-black text-white transition group-hover:text-blue-200 sm:text-lg">
               Infinity Info Systems

@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Ecosystem", href: "/mcgr-framework/ecosystem" },
   { label: "Publications", href: "/mcgr-framework/publications" },
   { label: "Assets", href: "/mcgr-framework/assets" },
+  { label: "Contact", href: "/mcgr-framework/contact" },
   { label: "GitHub Wiki", href: "https://github.com/Infinity-Info-systems/MCGR-Framework/wiki" },
 ];
 
@@ -14,7 +16,13 @@ export default function Footer() {
         <div>
           <div className="mb-4 flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-blue-400/40 bg-slate-950">
-              <img src="/mcgr-logo.svg" alt="MCGR Framework logo" className="h-full w-full object-contain p-1.5" />
+              <Image
+                src="/mcgr-logo.svg"
+                alt="MCGR Framework logo"
+                width={40}
+                height={40}
+                className="h-full w-full object-contain p-1.5"
+              />
             </div>
             <div>
               <p className="text-blue-300 font-bold tracking-[0.22em] uppercase">MCGR Framework</p>

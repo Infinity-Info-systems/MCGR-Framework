@@ -67,6 +67,17 @@ export default function EcosystemPage() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-10 sm:space-y-12">
+        <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 sm:p-8">
+          <p className="text-blue-300 font-bold mb-3">Operating Model Index</p>
+          <h2 className="text-2xl sm:text-3xl font-black mb-4">See the ecosystem as one operating model.</h2>
+          <p className="text-slate-300 leading-7 max-w-4xl">
+            The master operating model index groups the repos by strategy, governance, assessment, reliability, observability, platform, and evidence so the broader system is easier to scan.
+          </p>
+          <Link href="/mcgr-framework/operating-model" className="inline-flex mt-5 rounded-xl border border-blue-400 px-5 py-3 font-bold text-blue-300 hover:bg-blue-400 hover:text-slate-950 transition">
+            Open operating model index
+          </Link>
+        </div>
+
         <div className="rounded-3xl border border-blue-400/30 bg-gradient-to-br from-blue-950 to-slate-900 p-6 sm:p-8 md:p-10">
           <p className="text-blue-300 font-bold mb-4">Featured Repository</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-5">MCGR-Framework</h2>
