@@ -18,6 +18,7 @@ This index organizes the MCGR repository into a navigable content system and def
 - [Starter Kit Status](./starter-kit-status.md)
 - [Repo Content Recommendations Completion](./repo-content-recommendations-completion.md)
 - [Framework Overview](./framework-overview.md)
+- [Operating Model Index](./operating-model-index.md)
 - [Problem Statement](./problem-statement.md)
 - [Framework Architecture](./framework-architecture.md)
 - [Publication and Webpage Plan](./publication-and-webpage-plan.md)

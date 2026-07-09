@@ -52,14 +52,14 @@ export default function MCGRFrameworkPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-16 md:py-20">
           <p className="text-blue-300 font-bold mb-4">Infinity Info Systems / Flagship Enterprise Offering</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] max-w-5xl mb-6">
-            MCGR Framework Gives Enterprises One Consistent Operating Model For Multi-Cloud Governance, Reliability, Resilience, FinOps, Observability, And Compliance.
+            MCGR Framework Gives Enterprises One Consistent Operating Model For Multi-cloud Governance, Reliability, Resilience, FinOps, Observability, And Compliance.
           </h1>
           <p className="text-slate-300 text-lg md:text-xl leading-8 max-w-4xl mb-10">
-            It Is The Public Face Of Our Enterprise Service Offering, Backed By Research, Artifacts, And A Connected Repository Ecosystem.
+            It is the public face of our enterprise service offering, backed by research, artifacts, and a connected repository ecosystem.
           </p>
           <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
             <Link href="#ecosystem" className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-bold">
-              Explore The Ecosystem
+              Explore the ecosystem
             </Link>
             <a
               href="https://github.com/rammar876/MCGR-Framework"
@@ -70,20 +70,20 @@ export default function MCGRFrameworkPage() {
               Open MCGR-Framework Repo
             </a>
             <Link href="/mcgr-framework/publications" className="border border-slate-600 hover:border-blue-400 px-6 py-3 rounded-xl font-bold">
-              View Publications
+              View publications
             </Link>
             <Link href="/mcgr-framework/assets" className="border border-slate-600 hover:border-blue-400 px-6 py-3 rounded-xl font-bold">
-              View Assets
+              View assets
             </Link>
             <Link href="/mcgr-framework/ecosystem" className="border border-slate-600 hover:border-blue-400 px-6 py-3 rounded-xl font-bold">
-              Open Ready Reference
+              Open ready reference
             </Link>
           </div>
         </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <p className="text-blue-300 font-bold mb-4">EXECUTIVE VALUE</p>
+        <p className="text-blue-300 font-bold mb-4">Executive Value</p>
         <h2 className="text-3xl md:text-4xl font-black mb-6">One Flagship Model For Enterprise Cloud Leadership.</h2>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 text-slate-300 leading-7">
           {[
@@ -105,7 +105,7 @@ export default function MCGRFrameworkPage() {
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-3xl border border-blue-400/30 bg-gradient-to-br from-slate-900 to-blue-950 p-6 md:p-8">
             <p className="text-blue-300 font-bold mb-4">Technical Reference</p>
-            <h2 className="text-2xl md:text-4xl font-black mb-5">A Five-Layer Operating Model With A Continuous Feedback Loop.</h2>
+            <h2 className="text-2xl md:text-4xl font-black mb-5">A five-layer operating model with a continuous feedback loop.</h2>
             <p className="text-slate-300 leading-7 max-w-3xl">
               The technical documentation describes MCGR as a practical enterprise model that unifies governance, SRE, FinOps, disaster recovery, and infrastructure into one repeatable operating system.
             </p>
@@ -145,7 +145,7 @@ export default function MCGRFrameworkPage() {
           </div>
           <div className="rounded-3xl border border-slate-800 bg-slate-900 p-6 md:p-8">
             <p className="text-blue-300 font-bold mb-4">Operational Outcomes</p>
-            <h2 className="text-2xl md:text-3xl font-black mb-5">Executive Outcomes</h2>
+            <h2 className="text-2xl md:text-3xl font-black mb-5">Executive outcomes</h2>
             <div className="space-y-3">
               {wikiMetrics.map(([label, value]) => (
                 <div key={label} className="flex items-center justify-between gap-4 rounded-2xl border border-slate-800 bg-slate-950/60 px-4 py-3">
@@ -172,7 +172,7 @@ export default function MCGRFrameworkPage() {
             </Link>
           </div>
           <p className="text-slate-300 text-lg leading-8 max-w-4xl mb-10">
-            The Framework Is Grouped Into Core Layers, Applied Operating Repos, And Supporting Knowledge Repos.
+            The framework is grouped into core layers, applied operating repos, and supporting knowledge repos.
           </p>
 
           <div className="space-y-12">
@@ -207,12 +207,12 @@ export default function MCGRFrameworkPage() {
         <div className="grid lg:grid-cols-[1fr_0.9fr] gap-10">
           <div>
             <p className="text-blue-300 font-bold mb-4">Publications</p>
-            <h2 className="text-3xl md:text-4xl font-black mb-6">Research-Backed And Publication-Ready.</h2>
+            <h2 className="text-3xl md:text-4xl font-black mb-6">Research-backed and publication-ready.</h2>
             <div className="space-y-4 text-slate-300 leading-7">
-              <p>MCGR Is Supported By SSRN Papers, Conference Submissions, Citations, And Reusable Evidence Assets.</p>
-              <p>The Publication Trail Reinforces MCGR As A Serious Operating Model For Enterprise Cloud Governance And Resilience.</p>
+              <p>MCGR is supported by SSRN papers, conference submissions, citations, and reusable evidence assets.</p>
+              <p>The publication trail reinforces MCGR as a serious operating model for enterprise cloud governance and resilience.</p>
               <Link href="/mcgr-framework/publications" className="inline-flex mt-3 text-blue-300 font-bold hover:text-blue-200">
-                Open Publications Page
+                Open publications page
               </Link>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function MCGRFrameworkPage() {
             </Link>
           </div>
           <p className="text-slate-300 text-lg leading-8 max-w-4xl mb-10">
-            Use The Supporting Repositories For Diagrams, Templates, Scorecards, Dashboards, Maturity Models, And Case Studies.
+            Use the supporting repositories for diagrams, templates, scorecards, dashboards, maturity models, and case studies.
           </p>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
