@@ -3,29 +3,9 @@
 import { useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
 import BrandBar from "../../../components/BrandBar";
+import { mcgrContactPaths } from "../../../src";
 
 const contactEmail = "rameshmarella@infinityinfosystems.com";
-
-const contactPaths = [
-  {
-    title: "GitHub Repository",
-    detail: "Open the MCGR-Framework repo for source, issues, and repository history.",
-    href: "https://github.com/Infinity-Info-systems/MCGR-Framework",
-    label: "Open Repo",
-  },
-  {
-    title: "GitHub Wiki",
-    detail: "Use the wiki for deeper technical reference, narrative notes, and supporting context.",
-    href: "https://github.com/Infinity-Info-systems/MCGR-Framework/wiki",
-    label: "Open Wiki",
-  },
-  {
-    title: "Ecosystem Map",
-    detail: "Review the operating model and use the ecosystem page to navigate the participating repos.",
-    href: "/mcgr-framework/ecosystem",
-    label: "View Ecosystem",
-  },
-];
 
 const inquiryTypes = [
   "Framework questions",
@@ -102,7 +82,7 @@ export default function ContactPage() {
         </div>
 
         <div className="mt-8 grid gap-5 lg:grid-cols-3">
-          {contactPaths.map((item) => (
+          {mcgrContactPaths.map((item) => (
             <a
               key={item.title}
               href={item.href}

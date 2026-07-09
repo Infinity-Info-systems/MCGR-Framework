@@ -1,62 +1,6 @@
 import Link from "next/link";
 import BrandBar from "../../../components/BrandBar";
-
-const layers = [
-  ["Flagship narrative", "MCGR-Framework"],
-  ["Strategy", "Executive Technology Roadmaps, Enterprise Architecture Blueprints"],
-  ["Governance", "Cloud Risk and Compliance Controls, AI Governance Framework, Cloud FinOps Governance, DR Governance Framework"],
-  ["Assessment", "Cloud Governance Assessment Toolkit, Enterprise Resilience Maturity Model, Technical Due Diligence Cloud"],
-  ["Reliability", "SLO-Driven Cloud Architecture, SRE Reliability Models, Predictive Reliability Models"],
-  ["Observability", "AI-Driven Observability Framework, Self-Healing Cloud Operations"],
-  ["Platform", "Platform Engineering Operating Model"],
-  ["Evidence", "Cloud Transformation Case Studies, Papers and Publications"],
-];
-
-const groups = [
-  {
-    title: "Strategy And Roadmaps",
-    items: [
-      ["Executive Technology Roadmaps", "https://github.com/rammar876/executive-technology-roadmaps"],
-      ["Enterprise Architecture Blueprints", "https://github.com/rammar876/enterprise-architecture-blueprints"],
-      ["Cloud Transformation Case Studies", "https://github.com/rammar876/cloud-transformation-case-studies"],
-    ],
-  },
-  {
-    title: "Governance And Control",
-    items: [
-      ["Cloud Risk And Compliance Controls", "https://github.com/rammar876/cloud-risk-compliance-controls"],
-      ["AI Governance Framework", "https://github.com/rammar876/ai-governance-framework"],
-      ["Cloud FinOps Governance", "https://github.com/rammar876/cloud-finops-governance"],
-      ["DR Governance Framework", "https://github.com/rammar876/dr-governance-framework"],
-    ],
-  },
-  {
-    title: "Assessment And Maturity",
-    items: [
-      ["Cloud Governance Assessment Toolkit", "https://github.com/rammar876/cloud-governance-assessment-toolkit"],
-      ["Enterprise Resilience Maturity Model", "https://github.com/rammar876/enterprise-resilience-maturity-model"],
-      ["Technical Due Diligence Cloud", "https://github.com/rammar876/technical-due-diligence-cloud"],
-    ],
-  },
-  {
-    title: "Reliability And Observability",
-    items: [
-      ["SLO-Driven Cloud Architecture", "https://github.com/rammar876/slo-driven-cloud-architecture"],
-      ["SRE Reliability Models", "https://github.com/rammar876/sre-reliability-models"],
-      ["Predictive Reliability Models", "https://github.com/rammar876/predictive-reliability-models"],
-      ["AI-Driven Observability Framework", "https://github.com/rammar876/ai-driven-observability-framework"],
-      ["Self-Healing Cloud Operations", "https://github.com/rammar876/self-healing-cloud-operations"],
-    ],
-  },
-  {
-    title: "Platform And Evidence",
-    items: [
-      ["Platform Engineering Operating Model", "https://github.com/rammar876/platform-engineering-operating-model"],
-      ["Architecture Diagrams", "https://github.com/rammar876/architecture-diagrams"],
-      ["Papers And Publications", "https://github.com/rammar876/papers-and-publications"],
-    ],
-  },
-];
+import { mcgrOperatingLayers, mcgrOperatingSections } from "../../../src";
 
 export default function OperatingModelPage() {
   return (
@@ -80,7 +24,7 @@ export default function OperatingModelPage() {
         </div>
 
         <div className="mt-8 grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {layers.map(([layer, description]) => (
+          {mcgrOperatingLayers.map(([layer, description]) => (
             <div key={layer} className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
               <p className="text-blue-300 font-bold mb-2">{layer}</p>
               <p className="text-slate-300 leading-7">{description}</p>
@@ -89,7 +33,7 @@ export default function OperatingModelPage() {
         </div>
 
         <div className="mt-10 space-y-12">
-          {groups.map((group) => (
+          {mcgrOperatingSections.map((group) => (
             <div key={group.title}>
               <h2 className="text-2xl sm:text-3xl font-black mb-5">{group.title}</h2>
               <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 xl:grid-cols-3">

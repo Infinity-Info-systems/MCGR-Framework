@@ -1,60 +1,12 @@
 import Link from "next/link";
-
-const coreFrameworks = [
-  ["Multi-Cloud Governance Model", "https://github.com/rammar876/multi-cloud-governance-model"],
-  ["SLO-Driven Cloud Architecture", "https://github.com/rammar876/slo-driven-cloud-architecture"],
-  ["Cloud FinOps Governance", "https://github.com/rammar876/cloud-finops-governance"],
-  ["DR Governance Framework", "https://github.com/rammar876/dr-governance-framework"],
-  ["AI-Driven Observability Framework", "https://github.com/rammar876/ai-driven-observability-framework"],
-  ["Cloud Risk and Compliance Controls", "https://github.com/rammar876/cloud-risk-compliance-controls"],
-  ["AI Governance Framework", "https://github.com/rammar876/ai-governance-framework"],
-];
-
-const operatingRepos = [
-  ["Cloud Governance Assessment Toolkit", "https://github.com/rammar876/cloud-governance-assessment-toolkit"],
-  ["Enterprise Resilience Maturity Model", "https://github.com/rammar876/enterprise-resilience-maturity-model"],
-  ["Technical Due Diligence Cloud", "https://github.com/rammar876/technical-due-diligence-cloud"],
-  ["Platform Engineering Operating Model", "https://github.com/rammar876/platform-engineering-operating-model"],
-  ["Executive Technology Roadmaps", "https://github.com/rammar876/executive-technology-roadmaps"],
-];
-
-const knowledgeRepos = [
-  ["Architecture Diagrams", "https://github.com/rammar876/architecture-diagrams"],
-  ["Cloud Transformation Case Studies", "https://github.com/rammar876/cloud-transformation-case-studies"],
-  ["Enterprise Architecture Blueprints", "https://github.com/rammar876/enterprise-architecture-blueprints"],
-  ["Papers and Publications", "https://github.com/rammar876/papers-and-publications"],
-  ["Predictive Reliability Models", "https://github.com/rammar876/predictive-reliability-models"],
-  ["Self-Healing Cloud Operations", "https://github.com/rammar876/self-healing-cloud-operations"],
-  ["SRE Reliability Models", "https://github.com/rammar876/sre-reliability-models"],
-];
-
-const wikiLayers = [
-  "Governance And Policy",
-  "Observability And SRE",
-  "Cost Optimization",
-  "Disaster Recovery And Resilience",
-  "Multi-Cloud Infrastructure",
-];
-
-const wikiMetrics = [
-  ["Cloud Cost", "~35% Reduction"],
-  ["Uptime", "99.9%+"],
-  ["MTTR", "Reduced"],
-  ["Resource Utilization", "Optimized"],
-  ["DR Readiness", "Improved"],
-];
-
-const executiveSummary = [
-  "One entry point for the flagship operating model.",
-  "One ecosystem map for supporting repos, evidence, and publications.",
-  "One path from strategy to assessment to execution.",
-];
-
-const spotlightRepos = [
-  ["MCGR-Framework Repo", "https://github.com/Infinity-Info-systems/MCGR-Framework"],
-  ["Operating Model Index", "/mcgr-framework/operating-model"],
-  ["Ecosystem Map", "/mcgr-framework/ecosystem"],
-];
+import {
+  mcgrExecutiveSummary,
+  mcgrPublications,
+  mcgrRepoGroups,
+  mcgrSpotlightRepos,
+  mcgrWikiLayers,
+  mcgrWikiMetrics,
+} from "../../src";
 
 export default function MCGRFrameworkPage() {
   return (
@@ -143,7 +95,7 @@ export default function MCGRFrameworkPage() {
               </div>
             </div>
             <div className="grid gap-3">
-              {spotlightRepos.map(([label, href]) => (
+              {mcgrSpotlightRepos.map(([label, href]) => (
                 <Link
                   key={label}
                   href={href}
@@ -169,7 +121,7 @@ export default function MCGRFrameworkPage() {
               </p>
             </div>
             <ul className="space-y-3 text-slate-300 leading-7">
-              {executiveSummary.map((item) => (
+              {mcgrExecutiveSummary.map((item) => (
                 <li key={item} className="rounded-2xl border border-slate-800 bg-slate-950/70 px-4 py-3">
                   {item}
                 </li>
@@ -201,7 +153,7 @@ export default function MCGRFrameworkPage() {
               </a>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 mt-8">
-              {wikiLayers.map((layer) => (
+              {mcgrWikiLayers.map((layer) => (
                 <div key={layer} className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4 font-bold text-slate-100">
                   {layer}
                 </div>
@@ -225,7 +177,7 @@ export default function MCGRFrameworkPage() {
             <p className="text-blue-300 font-bold mb-4">Operational Outcomes</p>
             <h2 className="text-2xl md:text-3xl font-black mb-5">Executive outcomes</h2>
             <div className="space-y-3">
-              {wikiMetrics.map(([label, value]) => (
+              {mcgrWikiMetrics.map(([label, value]) => (
                 <div key={label} className="flex items-center justify-between gap-4 rounded-2xl border border-slate-800 bg-slate-950/60 px-4 py-3">
                   <span className="text-slate-300">{label}</span>
                   <span className="font-bold text-white">{value}</span>
@@ -254,15 +206,11 @@ export default function MCGRFrameworkPage() {
           </p>
 
           <div className="space-y-12">
-            {[
-              ["Core Frameworks", coreFrameworks],
-              ["Applied Operating Repos", operatingRepos],
-              ["Supporting Knowledge Repos", knowledgeRepos],
-            ].map(([groupName, groupItems]) => (
-              <div key={groupName as string}>
-                <h3 className="text-2xl font-black mb-6">{groupName as string}</h3>
+            {mcgrRepoGroups.map((group) => (
+              <div key={group.title}>
+                <h3 className="text-2xl font-black mb-6">{group.title}</h3>
                 <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-                  {(groupItems as [string, string][]).map(([label, href]) => (
+                  {group.items.map(([label, href]) => (
                     <a
                       key={label}
                       href={href}
@@ -296,10 +244,9 @@ export default function MCGRFrameworkPage() {
           </div>
           <div className="rounded-3xl border border-slate-800 bg-slate-900 p-8">
             <ul className="space-y-4 text-slate-200 leading-7">
-              <li>A Multi-Cloud Governance And Site Reliability Engineering Framework For FinTech Platforms</li>
-              <li>AI-Driven Observability And Reliability Framework For Multi-Cloud Financial Platforms</li>
-              <li>A Standardized Multi-Cloud Governance Model For Policy Consistency And Drift Detection</li>
-              <li>Designing SLO-Driven Cloud Architectures</li>
+              {mcgrPublications.map(([title]) => (
+                <li key={title}>{title}</li>
+              ))}
             </ul>
           </div>
         </div>

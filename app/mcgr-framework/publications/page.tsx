@@ -1,28 +1,6 @@
 import Link from "next/link";
 import BrandBar from "../../../components/BrandBar";
-
-const publications = [
-  {
-    title: "A Multi-Cloud Governance And Site Reliability Engineering Framework For FinTech Platforms",
-    detail: "SSRN case study and umbrella MCGR framework paper.",
-    href: "https://papers.ssrn.com/abstract=6663578",
-  },
-  {
-    title: "AI-Driven Observability And Reliability Framework For Multi-Cloud Financial Platforms",
-    detail: "Predictive observability and operational intelligence publication.",
-    href: "https://papers.ssrn.com/abstract=6557159",
-  },
-  {
-    title: "A Standardized Multi-Cloud Governance Model For Policy Consistency And Drift Detection",
-    detail: "Governance consistency and drift detection publication.",
-    href: "https://papers.ssrn.com/abstract=6713338",
-  },
-  {
-    title: "Designing SLO-Driven Cloud Architectures",
-    detail: "Reliability, performance, and cost balancing framework.",
-    href: "https://papers.ssrn.com/abstract=6617678",
-  },
-];
+import { mcgrPublications } from "../../../src";
 
 export default function PublicationsPage() {
   return (
@@ -55,16 +33,16 @@ export default function PublicationsPage() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 grid gap-4 sm:gap-6">
-        {publications.map((paper) => (
+        {mcgrPublications.map(([title, href]) => (
           <a
-            key={paper.title}
-            href={paper.href}
+            key={title}
+            href={href}
             target="_blank"
             rel="noreferrer"
             className="rounded-3xl border border-slate-800 bg-slate-900 p-6 sm:p-8 hover:border-blue-400 transition"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-black mb-3 leading-tight">{paper.title}</h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-7">{paper.detail}</p>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-black mb-3 leading-tight">{title}</h2>
+            <p className="text-slate-300 text-base sm:text-lg leading-7">Open the publication record and supporting research context.</p>
             <p className="text-blue-300 font-bold mt-5">Open SSRN</p>
           </a>
         ))}

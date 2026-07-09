@@ -1,33 +1,6 @@
 import Link from "next/link";
 import BrandBar from "../../../components/BrandBar";
-
-const assets = [
-  {
-    title: "Architecture Diagrams",
-    detail: "Visual models for governance, SRE, observability, resilience, and FinOps.",
-    href: "https://github.com/rammar876/architecture-diagrams",
-  },
-  {
-    title: "Cloud Governance Assessment Toolkit",
-    detail: "Assessment checklists, scorecards, questionnaires, and remediation templates.",
-    href: "https://github.com/rammar876/cloud-governance-assessment-toolkit",
-  },
-  {
-    title: "Cloud Transformation Case Studies",
-    detail: "Narrative case studies, impact metrics, and executive storytelling artifacts.",
-    href: "https://github.com/rammar876/cloud-transformation-case-studies",
-  },
-  {
-    title: "Enterprise Resilience Maturity Model",
-    detail: "Maturity levels, scorecards, dashboards, and roadmap templates.",
-    href: "https://github.com/rammar876/enterprise-resilience-maturity-model",
-  },
-  {
-    title: "Papers And Publications",
-    detail: "SSRN papers, citations, abstracts, LaTeX, and PDF references.",
-    href: "https://github.com/rammar876/papers-and-publications",
-  },
-];
+import { mcgrAssets } from "../../../src";
 
 export default function AssetsPage() {
   return (
@@ -60,7 +33,7 @@ export default function AssetsPage() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 grid gap-4 sm:gap-6">
-        {assets.map((asset) => (
+        {mcgrAssets.map((asset) => (
           <a
             key={asset.title}
             href={asset.href}
