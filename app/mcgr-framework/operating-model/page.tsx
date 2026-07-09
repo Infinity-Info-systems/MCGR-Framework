@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BrandBar from "../../../../components/BrandBar";
+import BrandBar from "../../../components/BrandBar";
 
 const layers = [
   ["Flagship narrative", "MCGR-Framework"],
