@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const coreFrameworks = [
   ["Multi-Cloud Governance Model", "https://github.com/rammar876/multi-cloud-governance-model"],
@@ -63,15 +62,6 @@ export default function MCGRFrameworkPage() {
       <section className="relative overflow-hidden border-b border-slate-800">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#1d4ed8,transparent_35%),radial-gradient(circle_at_bottom_right,#0f766e,transparent_30%)] opacity-30" />
         <div className="relative max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-slate-950/70 px-4 py-3 shadow-lg shadow-blue-950/20">
-            <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border border-blue-400/30 bg-slate-950">
-              <Image src="/mcgr-logo.svg" alt="MCGR Framework logo" width={44} height={44} className="h-full w-full object-contain p-1" priority />
-            </div>
-            <div className="leading-tight">
-              <p className="text-[10px] font-semibold tracking-[0.32em] uppercase text-blue-300">MCGR Framework</p>
-              <p className="text-sm font-bold text-white">Infinity Info Systems flagship offering</p>
-            </div>
-          </div>
           <p className="text-blue-300 font-bold mb-4">Infinity Info Systems / Flagship Enterprise Offering</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.05] max-w-5xl mb-6">
             MCGR Framework Gives Enterprises One Consistent Operating Model For Multi-cloud Governance, Reliability, Resilience, FinOps, Observability, And Compliance.
