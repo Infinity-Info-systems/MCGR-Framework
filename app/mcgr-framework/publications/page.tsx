@@ -54,15 +54,6 @@ export default function PublicationsPage() {
         </div>
       </section>
 
-      <section className="border-b border-slate-800 bg-slate-950/95">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap gap-2 sm:gap-3 text-sm font-bold">
-          <Link href="/mcgr-framework" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Home</Link>
-          <Link href="/mcgr-framework/ecosystem" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Ecosystem</Link>
-          <Link href="/mcgr-framework/publications" className="rounded-full border border-blue-400 px-4 py-2 text-blue-300">Publications</Link>
-          <Link href="/mcgr-framework/assets" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Assets</Link>
-        </div>
-      </section>
-
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 grid gap-4 sm:gap-6">
         {publications.map((paper) => (
           <a

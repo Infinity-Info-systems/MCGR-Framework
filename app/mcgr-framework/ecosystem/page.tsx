@@ -57,15 +57,6 @@ export default function EcosystemPage() {
         description="This page is the ready-reference map for the MCGR repository family. Use it to jump directly to the right framework, operating model, or supporting knowledge repo."
       />
 
-      <section className="border-b border-slate-800 bg-slate-950/95">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap gap-2 sm:gap-3 text-sm font-bold">
-          <Link href="/mcgr-framework" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Home</Link>
-          <Link href="/mcgr-framework/ecosystem" className="rounded-full border border-blue-400 px-4 py-2 text-blue-300">Ecosystem</Link>
-          <Link href="/mcgr-framework/publications" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Publications</Link>
-          <Link href="/mcgr-framework/assets" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">Assets</Link>
-        </div>
-      </section>
-
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-10 sm:space-y-12">
         <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 sm:p-8">
           <p className="text-blue-300 font-bold mb-3">Operating Model Index</p>

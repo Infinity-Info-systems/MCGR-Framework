@@ -92,26 +92,6 @@ export default function ContactPage() {
         description="Use this page to find the right reference path for the framework, supporting repos, and the deeper technical material."
       />
 
-      <section className="border-b border-slate-800 bg-slate-950/95">
-        <div className="mx-auto flex max-w-7xl flex-wrap gap-2 px-4 py-4 text-sm font-bold sm:px-6">
-          <Link href="/mcgr-framework" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">
-            Home
-          </Link>
-          <Link href="/mcgr-framework/ecosystem" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">
-            Ecosystem
-          </Link>
-          <Link href="/mcgr-framework/publications" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">
-            Publications
-          </Link>
-          <Link href="/mcgr-framework/assets" className="rounded-full border border-slate-700 px-4 py-2 hover:border-blue-400">
-            Assets
-          </Link>
-          <Link href="/mcgr-framework/contact" className="rounded-full border border-blue-400 px-4 py-2 text-blue-300">
-            Contact
-          </Link>
-        </div>
-      </section>
-
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
         <div className="rounded-3xl border border-blue-400/30 bg-gradient-to-br from-slate-900 to-blue-950 p-6 sm:p-8">
           <p className="text-blue-300 font-bold mb-3">Best Paths</p>
