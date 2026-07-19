@@ -177,7 +177,7 @@ That keeps the website framed as an operating system for cloud governance, not j
 
 Use `MCGR-Framework` as the canonical public identity, and publish it at:
 
-- `https://infinityinfosystems.com/mcgr-framework`
+- `https://mcgr.infinityinfosystems.com/mcgr-framework`
 
 Keep all companion repos linked from the website rather than trying to publish each repo as a separate public homepage.
 
@@ -187,7 +187,7 @@ The public site should live under the `infinityinfosystems.com` domain so it fee
 
 Recommended path:
 
-- `infinityinfosystems.com/mcgr-framework`
+- `mcgr.infinityinfosystems.com/mcgr-framework`
 
 Recommended positioning:
 

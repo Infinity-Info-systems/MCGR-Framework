@@ -1,0 +1,11 @@
+{
+  "name": "mcgr-enterprise-starter-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free MCGR multi-cloud governance baseline assessment.",
+  "scripts": {
+    "assess": "node src/assess.js config/cloud-estate.json",
+    "test": "node --test src/assess.test.js"
+  },
+  "engines": { "node": ">=20" }
+}

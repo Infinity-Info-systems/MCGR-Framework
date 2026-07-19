@@ -8,6 +8,18 @@ The MCGR Framework is a research-driven enterprise architecture framework for go
 It integrates cloud governance, Site Reliability Engineering, FinOps, disaster recovery, observability, compliance alignment, and executive technology governance into a unified operating model.
 It should also make the ecosystem easy to explain from the public homepage and from the supporting repo pages.
 
+## Downloadable Enterprise Starter Kit
+
+A runnable, dependency-free baseline assessor is available in [`starter-kit/mcgr-enterprise-starter-kit`](starter-kit/mcgr-enterprise-starter-kit). It helps enterprises inventory AWS, Azure, GCP, and hybrid environments, score coverage across the six MCGR operating dimensions, and produce a JSON remediation report.
+
+```bash
+cd starter-kit/mcgr-enterprise-starter-kit
+npm run assess
+npm test
+```
+
+For a direct download, use the **Download enterprise starter kit** button on the framework homepage, which serves `public/downloads/mcgr-enterprise-starter-kit.zip`.
+
 ## Purpose
 
 Modern enterprises often manage fragmented cloud platforms, inconsistent governance, disconnected observability, rising cloud costs, and uneven disaster recovery maturity.

@@ -1,0 +1,12 @@
+{
+  "organization": "Example Enterprise",
+  "environments": [
+    {
+      "name": "production",
+      "providers": [
+        { "name": "aws", "accounts": 4, "policyCoverage": 92, "sloCoverage": 85, "drValidated": true, "costAllocationCoverage": 95, "observabilityCoverage": 90, "complianceCoverage": 88 },
+        { "name": "azure", "accounts": 3, "policyCoverage": 84, "sloCoverage": 78, "drValidated": false, "costAllocationCoverage": 82, "observabilityCoverage": 80, "complianceCoverage": 86 }
+      ]
+    }
+  ]
+}

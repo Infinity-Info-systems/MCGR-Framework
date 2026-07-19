@@ -4,7 +4,7 @@
 
 This plan captures the final steps to promote the MCGR public site from review to production at:
 
-- `https://infinityinfosystems.com/mcgr-framework`
+- `https://mcgr.infinityinfosystems.com/mcgr-framework`
 
 ## Current Status
 
@@ -26,7 +26,7 @@ This plan captures the final steps to promote the MCGR public site from review t
 
 1. Merge or copy the reviewed MCGR page updates into the production branch for `infinityinfosystems`.
 2. Build the production site in the deployment environment.
-3. Publish the site at `infinityinfosystems.com/mcgr-framework`.
+3. Publish the site at `mcgr.infinityinfosystems.com/mcgr-framework`.
 4. Verify all MCGR routes after deployment:
    - `/mcgr-framework`
    - `/mcgr-framework/ecosystem`

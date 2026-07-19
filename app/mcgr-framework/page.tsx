@@ -22,7 +22,14 @@ export default function MCGRFrameworkPage() {
             It is the public face of our enterprise service offering, backed by research, artifacts, and a connected repository ecosystem.
           </p>
           <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
-            <Link href="#ecosystem" className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-bold">
+            <a
+              href="/downloads/mcgr-enterprise-starter-kit.zip"
+              download
+              className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-bold"
+            >
+              Download enterprise starter kit
+            </a>
+            <Link href="#ecosystem" className="border border-slate-600 hover:border-blue-400 px-6 py-3 rounded-xl font-bold">
               Explore the ecosystem
             </Link>
             <a
@@ -50,6 +57,16 @@ export default function MCGRFrameworkPage() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-16">
+        <div className="rounded-3xl border border-emerald-400/30 bg-gradient-to-r from-emerald-950/70 via-slate-900 to-slate-950 p-6 md:p-8 mb-16">
+          <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-emerald-300 font-bold mb-3">Ready-to-download implementation code</p>
+              <h2 className="text-2xl md:text-3xl font-black mb-3">Start managing your multi-cloud estate with an MCGR-aligned baseline.</h2>
+              <p className="max-w-3xl text-slate-300 leading-7">Download a dependency-free Node.js starter kit that evaluates governance, SLO coverage, disaster-recovery validation, FinOps, observability, and compliance across AWS, Azure, GCP, or hybrid environments. It includes an editable cloud-estate inventory, automated assessment, and JSON report output.</p>
+            </div>
+            <a href="/downloads/mcgr-enterprise-starter-kit.zip" download className="inline-flex shrink-0 justify-center rounded-xl bg-emerald-400 px-5 py-3 font-bold text-slate-950 hover:bg-emerald-300">Download .zip</a>
+          </div>
+        </div>
         <p className="text-blue-300 font-bold mb-4">Executive Value</p>
         <h2 className="text-3xl md:text-4xl font-black mb-6">One Flagship Model For Enterprise Cloud Leadership.</h2>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 text-slate-300 leading-7">
